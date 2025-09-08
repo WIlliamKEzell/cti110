@@ -1,26 +1,98 @@
 <!DOCTYPE html>
 
 <head>
-
-<html lang="en">
-
-<meta charset="UTF-8">
-
-<title>form</title>
-
+        <title>form</title>
 </head>
 
+<body>
+   
+</head>
 
+    <b><a href="index.html">home</a> &nbsp;&nbsp;
+    <a href="table.html">table</a> &nbsp;&nbsp;
+    <a href="form.html">form</a> &nbsp;&nbsp;
+    <a href="https://www.google.com/?zx=1757006363367&no_sw_cr=1"target=_blank>google</a> </b> &nbsp;&nbsp;
 
 <body>
 
-<!--Your HTML tags will start here-->
 
- <h1>This is a Heading</h1>
+    <h1>Contact Form</h1>
+    <form>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required>
 
- <p>This is a paragraph.</p>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required>
 
-<!--Your HTML tags will end here-->
+    <label for="topic">Select your favorite programming language:</label>
+        <select id="topic" name="topic">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="database">Database</option>
+        </select>
+
+        <fieldset id="experience-fieldset">
+            <legend>Years of programming experience:</legend>
+            <input type="radio" id="exp0" name="experience" value="0-2">
+            <label for="exp0">0-2 years</label>
+            <input type="radio" id="exp1" name="experience" value="3-5">
+            <label for="exp1">3-5 years</label>
+            <input type="radio" id="exp2" name="experience" value="6-10">
+            <label for="exp2">6-10 years</label>
+            <input type="radio" id="exp3" name="experience" value="10+">
+            <label for="exp3">10+ years</label>
+        </fieldset>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" style="background-color:#fff3e0;"></textarea>
+
+        <button type="submit" style="background-color:#43a047;color:white;border:none;padding:8px 16px;border-radius:5px;margin-right:10px;cursor:pointer;">Submit</button>
+        <button type="reset" style="background-color:#e53935;color:white;border:none;padding:8px 16px;border-radius:5px;cursor:pointer;">Reset</button>
+    </form>
+
+    <style>
+        form {
+            background-color: #1565c0;
+            padding: 20px;
+            border-radius: 10px;
+            width: 350px;
+            margin: 30px auto;
+            font-family: Arial, sans-serif;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        #experience-fieldset label {
+            display: inline-block;
+            margin-right: 15px;
+            margin-bottom: 0;
+        }
+        fieldset {
+            margin-top: 15px;
+            border-radius: 5px;
+            border: 1px solid #90caf9;
+            padding: 10px;
+        }
+        fieldset#experience-fieldset {
+            background-color: #ffe600;
+            width: 100%;
+            box-sizing: border-box;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        legend {
+            color: #1976d2;
+            font-weight: bold;
+        }
+        #experience-fieldset legend {
+            color: #000000;
+            margin-top: 12px;
+        }
+    </style>
 
 </body>
 
